@@ -1,0 +1,83 @@
+html, body, div, img, ol, ul, li, a, h1, h2, h3, h4, h5, h6, p,
+header, footer, section, article, fieldset, figure, figcaption, button, input, blockquote, textarea {
+  border: 0;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  @include box-sizing(border-box);
+  
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+div, span, input[readonly] {
+  -ms-user-select:none;
+}
+
+html {
+  font-size: 100%;
+  overflow-x: hidden; 
+  
+  touch-action: manipulation; /* IE11 */
+  -ms-content-zooming: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #E4E4CC;
+  font-size: 16px;
+  
+  // better font rendering
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, 
+blockquote:after,
+q:before, 
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+button {
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  outline: 0;
+}
+
+input:focus, input:active, 
+button:focus, button:active {
+  outline: none;
+}
+
+input::-ms-clear {
+  display: none;
+} 
+
+ul, li {
+  list-style: none;
+}

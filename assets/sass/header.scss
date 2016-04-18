@@ -1,0 +1,157 @@
+.header {
+  border-bottom: 1px solid #000;
+  padding-top: 30px;
+  position: relative;
+  margin-bottom: 20px;
+  
+  .logo {
+    display: block;
+    img {
+      width: 220px;
+    }
+  }
+  
+  .header-buttons {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    
+    .btn-buy,
+    .btn-find {
+      background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/purchase-button.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      height: 98px;
+      width: 98px;
+      
+      border: none;
+      display: inline-block;
+      text-indent: -1000000px;
+    }
+    
+    .btn-find {
+      margin-left: 20px;
+      background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/findstore-button.jpg');
+    }
+  }
+}
+
+
+.hero {
+  position: relative;
+  
+  .bg {
+    background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 55% 10px 0 10px;
+  }
+  
+  .hero-text-3,
+  .hero-text-3-small {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    margin: 16px 0;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  
+  .hero-text-3  {
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+  }
+  
+  .hero-text-3-small {
+    display: none;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 40px;
+  }
+}
+
+
+.heading {
+  border-top: 3px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 4px 0;
+  margin-bottom: 10px;
+}
+
+.heading-2 {
+  margin-top: 20px;
+  font-size: 18px;
+  border-top: 1px solid #000;
+  border-bottom: none;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media all and (min-width: 970px) {
+  .hero .bg {
+    padding-top: 425px;
+  }
+}
+
+@include bp(medium) {
+  .hero {
+    
+    .bg {
+      background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/hero-tablet.jpg');
+    }
+    
+    .hero-text-3 {
+      font-size: 16px;
+    }
+  }
+}
+
+@include bp(small) {
+  .header {
+    border-bottom: none;
+    padding-top: 20px;
+    
+    .logo {
+      text-align: center;
+      img {
+        width: 150px;
+      }
+    }
+    
+    .header-buttons {
+      float: none;
+      margin-top: 10px;
+      text-align: center;
+      position: relative;;
+      top: auto;
+      right: auto;
+      .btn-find {
+        margin-left: 10px;
+      }
+      .btn-buy,
+      .btn-find {
+        background: none;
+        text-indent: 0;
+        border: 2px solid #000;
+        height: auto;
+        width: 44%;
+      }
+    }
+  }
+  
+  .hero {
+    .bg {
+      background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/hero-mobile.jpg');
+      padding-top: 100%;
+    }
+    .hero-text-3 {
+      display: none;
+    }
+    .hero-text-3-small {
+      display: block;
+    }
+  }
+}

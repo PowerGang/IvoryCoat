@@ -1,0 +1,87 @@
+@mixin transition($properties...) {
+  -webkit-transition: $properties;
+     -moz-transition: $properties;
+       -o-transition: $properties;
+          transition: $properties;
+}
+
+@mixin transform($properties...) {
+  -webkit-transform: $properties;
+     -moz-transform: $properties;
+       -o-transform: $properties;
+          transform: $properties;
+}
+
+@mixin transform-origin($properties...) {
+  -webkit-transform-origin: $properties;
+     -moz-transform-origin: $properties;
+       -o-transform-origin: $properties;
+          transform-origin: $properties;
+}
+
+@mixin box-shadow($properties...) {
+  -webkit-box-shadow: $properties;
+     -moz-box-shadow: $properties;
+       -o-box-shadow: $properties;
+          box-shadow: $properties;
+}
+
+@mixin box-sizing($property) {
+  -webkit-box-sizing: $property;
+     -moz-box-sizing: $property;
+       -o-box-sizing: $property;
+          box-sizing: $property;
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-wrap($values) {
+  -webkit-flex-wrap: $values;
+  -moz-flex-wrap: $values;
+  -webkit-flex-wrap: $values;
+  -ms-flex-wrap: $values;
+  flex-wrap: $values;
+}
+
+
+%truncate {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+@mixin scrollable {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+@mixin ie-swipe() {
+  // override panning in y-direction to allow for swiping
+  touch-action: pan-y; 
+}
+
+
+@mixin bp($point) {
+  @if $point == small {
+    @media (max-width: 580px) { @content; }
+  }
+  
+  @else if $point == medium {
+    @media (max-width: 820px) { @content; }
+  }
+}
+
+
+//
+// functions
+//
+@function rem($size) {
+  @return #{ (1 / $base_font_size) * $size }rem;
+}

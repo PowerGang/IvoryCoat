@@ -1,0 +1,157 @@
+.wrap {
+  max-width: 970px;
+  padding: 0 10px;
+  margin: auto;
+  &:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+.fifth {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  &:focus, &:active {
+    outline: none;
+  }
+  img {
+    width: 100%;
+  }
+  
+  .fifth-text-1 {
+    font-size: 12px;
+    font-style: italic;
+  }
+  .fifth-text-2 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+  }
+}
+
+@include bp(small) {
+  .fifth {
+    text-align: center;
+    .fifth-text-1,
+    .fifth-text-2 {
+      display: block;
+      font-size: 18px;
+    }
+    img {
+      width: 150px;
+      
+    }
+  }
+}
+
+.sixth {
+  float: left;
+  width: 16.666%;
+  padding: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  img {
+    width: 50px;
+  }
+  
+  span {
+    font-size: 13px;
+    display: block;
+    margin-top: 6px;
+  }
+}
+
+.half {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  margin-bottom: 20px;
+  
+  .half-1, .half-2 {
+    padding: 56% 5px 5px 5px;
+  }
+  
+  img {
+    width: 100px;
+  }
+}
+.half-1 {
+  background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/findstore.jpg');
+}
+
+.half-2 {
+  background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/purchase.jpg');
+}
+
+
+.third {
+  float: left;
+  width: 33.3333%;
+  padding: 5px;
+  position: relative;
+  
+  span {
+    margin: 16px 0 30px 0;
+    display: block;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+}
+
+.half-1,
+.half-2,
+.third-1,
+.third-2,
+.third-3 {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding-top: 100%;
+  position: relative;
+  display: block;
+}
+
+.third-1 {
+  background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/cbm-desktop.jpg');
+}
+
+.third-2 {
+  background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/fws-desktop.jpg');
+}
+
+.third-3 {
+  background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/ng-desktop.png');
+}
+
+
+@include bp(small) {
+  .third span {
+    display: none;
+  }
+  
+  .third-1 {
+    background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/cbm-mobile.jpg');
+  }
+
+  .third-2 {
+    background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/fws-mobile.jpg');
+  }
+
+  .third-3 {
+    background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/ng-mobile.png');
+    padding-top: 46%;
+  }
+  
+  .bp-small-1-2 {
+    width: 50%;
+  }
+  .bp-small-1 {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
