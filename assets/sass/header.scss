@@ -18,12 +18,13 @@
     
     .btn-buy,
     .btn-find {
+      background-color: #000;
       background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/purchase-button.jpg');
       background-repeat: no-repeat;
       background-size: 100% auto;
       height: 98px;
       width: 98px;
-      
+      color: #fff;
       border: none;
       display: inline-block;
       text-indent: -1000000px;
@@ -41,7 +42,7 @@
   position: relative;
   
   .bg {
-    background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/hero.jpg');
+    background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/doggy.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     padding: 55% 10px 0 10px;
@@ -100,7 +101,7 @@
   .hero {
     
     .bg {
-      background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/hero-tablet.jpg');
+      background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/doggy-tablet.jpg');
     }
     
     .hero-text-3 {
@@ -129,22 +130,30 @@
       top: auto;
       right: auto;
       .btn-find {
-        margin-left: 10px;
+        margin-left: 0;
+        float: right;
+      }
+      .btn-buy {
+        float: left;
       }
       .btn-buy,
       .btn-find {
+        padding: 10px;
+        font-size: 11px;
         background: none;
+        background-color: #000;
+        color: #fff;
         text-indent: 0;
-        border: 2px solid #000;
+        border: none;
         height: auto;
-        width: 44%;
+        width: 48%;
       }
     }
   }
   
   .hero {
     .bg {
-      background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/hero-mobile.jpg');
+      background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/doggy-mobile.jpg');
       padding-top: 100%;
     }
     .hero-text-3 {
