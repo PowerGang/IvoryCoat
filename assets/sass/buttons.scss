@@ -8,12 +8,17 @@
   padding: 6px 0;
 }
 
+.btn-orange {
+  background-color: #F26631;
+}
+
 .product-buttons {
   text-align: center;
   clear: both;
   padding-top: 24px;
   
   .btn {
+    font-size: 9px;
     padding: 10px 12px;
   }
 }

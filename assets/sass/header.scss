@@ -15,9 +15,15 @@
     position: absolute;
     right: 10px;
     top: 20px;
-    
+
+    .header-buttons-secondary-wrap {
+      margin-left: 10px;
+      display: inline-block;
+    }
+
     .btn-buy,
-    .btn-find {
+    .btn-find,
+    .btn-sample {
       background-color: #000;
       background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/purchase-button.jpg');
       background-repeat: no-repeat;
@@ -34,6 +40,11 @@
       margin-left: 20px;
       background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/findstore-button.jpg');
     }
+
+    .btn-sample {
+      background-color: transparent;
+      background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/samples-button.png');
+    }
   }
 }
 
@@ -42,7 +53,7 @@
   position: relative;
   
   .bg {
-    background-image: url("https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/doggy.jpg");
+    background-image: url("https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/dog.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     padding: 55% 10px 0 10px;
@@ -104,7 +115,7 @@
   .hero {
     
     .bg {
-      background-image: url("https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/doggy-tablet.jpg");
+      background-image: url("https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/dog-tablet2.jpg");
     }
     
     .hero-text-3 {
@@ -132,6 +143,7 @@
       position: relative;;
       top: auto;
       right: auto;
+
       .btn-find {
         margin-left: 0;
         float: right;
@@ -139,6 +151,7 @@
       .btn-buy {
         float: left;
       }
+      .btn-sample,
       .btn-buy,
       .btn-find {
         padding: 10px;
@@ -149,14 +162,23 @@
         text-indent: 0;
         border: none;
         height: auto;
-        width: 48%;
+        width: 49%;
+      }
+
+      .header-buttons-secondary-wrap {
+        display: block;
+        margin-top: 10px;
+      }
+
+      .btn-sample {
+        background-color: #F26631;
       }
     }
   }
   
   .hero {
     .bg {
-      background-image: url("https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/doggy-mobile.jpg");
+      background-image: url("https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/dog-mobile.jpg");
       padding-top: 100%;
     }
     .hero-text-3 {
