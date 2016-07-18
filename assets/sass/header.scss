@@ -18,12 +18,13 @@
     
     .btn-buy,
     .btn-find {
+      background-color: #000;
       background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/purchase-button.jpg');
       background-repeat: no-repeat;
       background-size: 100% auto;
       height: 98px;
       width: 98px;
-      
+      color: #fff;
       border: none;
       display: inline-block;
       text-indent: -1000000px;
@@ -134,6 +135,9 @@
       .btn-find {
         margin-left: 0;
         float: right;
+      }
+      .btn-buy {
+        float: left;
       }
       .btn-buy,
       .btn-find {
