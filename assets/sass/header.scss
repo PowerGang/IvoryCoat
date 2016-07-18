@@ -41,42 +41,45 @@
   position: relative;
   
   .bg {
-    background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/hero.jpg');
+    background-image: url("https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/doggy.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     padding: 55% 10px 0 10px;
   }
-  
-  .hero-text-3,
-  .hero-text-3-small {
-    display: block;
-    font-family: Arial, sans-serif;
-    font-style: italic;
-    margin: 16px 0;
-    letter-spacing: 1px;
-    font-size: 20px;
-  }
-  
-  .hero-text-3  {
-    border-bottom: 1px solid #000;
-    padding-bottom: 20px;
-  }
-  
-  .hero-text-3-small {
-    display: none;
-    font-size: 12px;
-    text-align: center;
-    line-height: 1.6;
-    padding: 0 40px;
-  }
+}
+
+.hero-text-3,
+.hero-text-3-small {
+  display: block;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  margin: 16px 0;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.hero-text-3-small {
+  display: none;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.6;
+  padding: 0 40px;
+}
+
+.hero-text-3  {
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 
 .heading {
+  font-weight: bold;
+  font-family: Times, sans-serif;
   border-top: 3px solid #000;
   border-bottom: 1px solid #000;
   padding: 4px 0;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .heading-2 {
@@ -84,10 +87,10 @@
   font-size: 18px;
   border-top: 1px solid #000;
   border-bottom: none;
-  padding: 10px 0;
+  padding: 20px 0 10px 0;
   margin-bottom: 10px;
   text-align: center;
-  font-weight: bold;
+  text-transform: uppercase;
 }
 
 @media all and (min-width: 970px) {
@@ -100,7 +103,7 @@
   .hero {
     
     .bg {
-      background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/hero-tablet.jpg');
+      background-image: url("https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/doggy-tablet.jpg");
     }
     
     .hero-text-3 {
@@ -129,22 +132,27 @@
       top: auto;
       right: auto;
       .btn-find {
-        margin-left: 10px;
+        margin-left: 0;
+        float: right;
       }
       .btn-buy,
       .btn-find {
+        padding: 10px;
+        font-size: 11px;
         background: none;
+        background-color: #000;
+        color: #fff;
         text-indent: 0;
-        border: 2px solid #000;
+        border: none;
         height: auto;
-        width: 44%;
+        width: 48%;
       }
     }
   }
   
   .hero {
     .bg {
-      background-image: url('https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/hero-mobile.jpg');
+      background-image: url("https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/doggy-mobile.jpg");
       padding-top: 100%;
     }
     .hero-text-3 {
