@@ -7,3 +7,24 @@
   border-bottom: 1px solid #000;
   padding-bottom: 10px;
 }
+
+.u-fluid-image {
+  display: block;
+  width: 100% !important;
+}
+
+
+.u-spacing-small {
+  margin-bottom: 16px;
+}
+
+.u-spacing-medium {
+  margin-bottom: 24px !important;
+}
+
+
+@include bp(small) {
+  .bp-small-hide {
+    display: none;
+  }  
+}

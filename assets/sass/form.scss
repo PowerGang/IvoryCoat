@@ -1,0 +1,99 @@
+form {
+
+  label, p {
+    font-size: 18px;
+  }
+  
+  .input {
+    margin-bottom: 8px;
+  }
+
+  .input-split {
+    display: flex;
+    .input {
+      flex: 1;
+    }
+    .input:first-child {
+      margin-right: 5px;
+    }
+    .input:last-child {
+      margin-left: 5px;
+    }
+  }
+  
+  label {
+    display: inline-block;
+  }
+
+  .btn {
+    background-color: #F26632;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 20px;
+    padding: 16px 24px;
+    width: auto;
+    margin-top: 16px;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  input {
+    border: 2px solid #E1E1E1;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 12px 16px;
+    width: 100%;
+    @include box-sizing(border-box);
+  }
+  
+  @include bp(small) {
+    input {
+      padding: 8px 12px;
+    }
+
+    .btn {
+      font-size: 18px;
+      padding: 12px 18px;
+      width: 100%;
+    }
+  }
+  
+  input[type="radio"] {
+    display:none;
+  }
+
+  .radios {
+
+    .label i,
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .label i {
+      background-color: transparent;
+      border-radius: 28px;
+      border: 2px solid #E1E1E1;
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      margin-right: 8px;
+    }
+
+    input[type="radio"]:checked + .label i {
+      background-color: #F26632;
+    }
+
+    .label {
+      position: relative;
+
+      &:hover {
+        cursor: pointer;  
+      }
+    }
+
+  }
+}

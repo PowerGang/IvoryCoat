@@ -11,6 +11,11 @@
     }
   }
   
+  .header-image {
+    width: 80px;
+    display: inline-block;
+  }
+  
   .header-buttons {
     position: absolute;
     right: 10px;
@@ -58,6 +63,12 @@
     background-size: 100% auto;
     padding: 55% 10px 0 10px;
   }
+}
+
+
+.hero-sample {
+  padding: 0 15px;
+  margin-bottom: 16px;
 }
 
 .hero-text-3,
@@ -188,4 +199,5 @@
       display: block;
     }
   }
+  
 }
