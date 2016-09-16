@@ -53,8 +53,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-connect');
 
   
-  grunt.registerTask('build', 'Build project for execution', function() {
-   grunt.task.run('sass');
- });
+  grunt.registerTask('build', ['sass', 'connect']);
  
 };
