@@ -34,8 +34,15 @@ module.exports = function(grunt) {
           'assets/css/app.css': 'assets/sass/master.scss'
         }
       },
+    },
+
+    connect: {
+      dev: {
+        port: 1337,
+        base: '.'
+      }
     }
-    
+
   });
  
 
@@ -43,6 +50,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-connect');
+
   
   grunt.registerTask('build', 'Build project for execution', function() {
    grunt.task.run('sass');

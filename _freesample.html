@@ -6,7 +6,7 @@
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
   <title>IvoryCoat</title>
   <link rel="icon" type="image/png" href="https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/ic-fav.png"> 
-  <link rel="stylesheet" href="http://www.ivorycoat.com.au/template/Styles/app.css">
+  <link rel="stylesheet" href="/assets/css/app.css">
 </head>
 
 <body>
@@ -16,23 +16,23 @@
       <img src="https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/logo2x.png">
     </a>
     <div class="header-buttons bp-small-hide">
-      <img src="https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/ic-natural-health-black.png" class="header-image">
+      <img src="https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/ic-natural-health-black.jpg" class="header-image">
       <img src="https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/aussie.png" class="header-image">
     </div>
   </header>
 
   <div class="hero-sample wrap">
-    <img class="u-fluid-image" src="https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/freesample-hero.jpg">
+    <img class="u-fluid-image" src="https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/freesample-header-image.jpg">
   </div>
 
   <div class="wrap">
     <div class="half bp-small-1">
       <section class="section-costs u-spacing-small">
-        <h2>PRIZE PACK INCLUDES:</h2>
+        <h2>$500 PRIZE PACK INCLUDES:</h2>
         <div class="section-border-top section-border-bottom u-spacing-small">
-          <p>3 x 13kg Bags Grain Free Dry Food</p>
-          <p>5 x 300g Gourmet treats</p>
-          <p>3 x 500ml Grooming products</p>
+          <p>3 x 13kg Bags Grain Free Dry dog Food</p>
+          <p>5 x 300g Gourmet dog treats</p>
+          <p>3 x 500ml dog Grooming products</p>
         </div>
       </section>
       <img class="u-fluid-image bp-small-hide" src="https://cdn2.bigcommerce.com/server4400/xhqax36/product_images/uploaded_images/freesample-support.jpg">
@@ -45,58 +45,92 @@
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSdYFTZha8SDIOeOpFbIcN3z79ZLbfXzUNeVI9J1gsHE1NHziA/formResponse" target="_self" method="POST" id="mG61Hd">
           <div class="input u-spacing-medium">
             <label>Email address</label>
-            <input type="text" placeholder="Email" autocomplete="off" tabindex="0" aria-label="Email Address" name="entry.1829070918" value="" >
+            <input id="email" type="text" placeholder="Email" required="required" autocomplete="off" tabindex="0" aria-label="Email Address" name="entry.1829070918" value="" >
           </div>
           <div class="input radios u-spacing-medium">
             <p>Sample Type (50g Trial Bag)</p>
             <label style="margin-right: 24px;">
-              <input type="radio" value="Adult" name="entry.967278445">
+              <input id="adult" type="radio" required="required" value="Adult" name="entry.967278445">
               <div class="label">
                 <i></i><span>Adult</span>
               </div>
             </label>
             <label>
-              <input type="radio" value="Puppy (2-12 months old)" name="entry.967278445">
+              <input id="puppy" type="radio" required="required" value="Puppy (2-12 months old)" name="entry.967278445">
               <div class="label">
                 <i></i><span>Puppy (2-12 months old)</span>
               </div>
             </label>
           </div>
           <div class="input">
+            <label>Tell us why quality nutrition for your dog is important?</label>
+            <textarea id="why" rows="3" name="entry.1556254598" required="required" ></textarea>
+          </div>
+          <div class="input">
             <p>Shipping address</p>
-            <input type="text" placeholder="First name" autocomplete="off" tabindex="0" aria-label="Untitled question" aria-describedby="i.desc.1004449604 i.err.1004449604" name="entry.1280822489" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
+            <input id="firstname" type="text" placeholder="First name" required="required" autocomplete="off" tabindex="0" aria-label="Untitled question" aria-describedby="i.desc.1004449604 i.err.1004449604" name="entry.1280822489" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
           </div>
           <div class="input">
-            <input type="text" placeholder="Last name" autocomplete="off" tabindex="0" aria-label="Untitled question" aria-describedby="i.desc.1876892616 i.err.1876892616" name="entry.948902011" value="" dir="auto" data-initial-dir="auto" data-initial-value="">          
+            <input id="lastname" type="text" placeholder="Last name" required="required" autocomplete="off" tabindex="0" aria-label="Untitled question" aria-describedby="i.desc.1876892616 i.err.1876892616" name="entry.948902011" value="" dir="auto" data-initial-dir="auto" data-initial-value="">          
           </div>
           <div class="input">
-            <input type="text" placeholder="Address" autocomplete="off" tabindex="0" aria-label="Untitled question" aria-describedby="i.desc.161365794 i.err.161365794" name="entry.364780913" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
+            <input id="address" type="text" placeholder="Address" required="required" autocomplete="off" tabindex="0" aria-label="Untitled question" aria-describedby="i.desc.161365794 i.err.161365794" name="entry.364780913" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
           </div>
           <div class="input">
-            <input type="text" placeholder="City" autocomplete="off" tabindex="0" aria-label="Untitled question" aria-describedby="i.desc.1521399614 i.err.1521399614" name="entry.1648806779" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
+            <input id="city" type="text" placeholder="City" required="required" autocomplete="off" tabindex="0" aria-label="Untitled question" aria-describedby="i.desc.1521399614 i.err.1521399614" name="entry.1648806779" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
           </div>
           <div class="input-split">
             <div class="input">
-              <input type="text" placeholder="State" autocomplete="off" tabindex="0" aria-label="Untitled question" aria-describedby="i.desc.2027939287 i.err.2027939287" name="entry.265354307" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
+              <input id="state" type="text" placeholder="State" required="required" autocomplete="off" tabindex="0" aria-label="Untitled question" aria-describedby="i.desc.2027939287 i.err.2027939287" name="entry.265354307" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
             </div>
             <div class="input">
-              <input type="text" placeholder="Postcode" autocomplete="off" tabindex="0" name="entry.1595718685" value="">
+              <input id="postcode" type="text" placeholder="Postcode" required="required" autocomplete="off" tabindex="0" name="entry.1595718685" value="">
             </div>
           </div>
           <input type="hidden" name="fvv" value="1">
           <input type="hidden" name="draftResponse" value="[,,&quot;7168728694821048609&quot;]">
           <input type="hidden" name="pageHistory" value="0">
           <input type="hidden" name="fbzx" value="7168728694821048609">
-          <input class="btn u-spacing-small" type="submit" value="Order now">
+          <button id="form-trigger" type="button" class="btn u-spacing-small">Order now</button>
           <p>Free standard shipping included!</p>
         </form>
+        <div id="thank-you-message" style="display: none; margin-top: 50px;">
+          <p>Thank you for your purchase!</p> 
+          <p>Your FREE sample will be shipped within 7-10 days, via Australia Post.</p>
+          <p>Please note that due to high demands and postal requirements you will only receive one sample.</p>
+          <p>Our foods come with a money back guarantee so if you don't feel like waiting head to one our many retailers and put us to the test today! You can find your closest store or online stockist at <a href="http://ivorycoat.com.au">http://ivorycoat.com.au</a> </p>
+        </div>
       </section>
     </div>
   </div>
 
   <div class="footer-terms">
     <div class="wrap">
-      <p><strong>Terms & Conditions:</strong> jcdiow ewjodw jicd jcd jlcd jcdw wjiocdw qjcdiow ewjodw jicd jcd jlcd jcdw wjiocdw qjcdiow ewjodw jicd jcd jlcd jcdw wjiocdw qjcdiow ewjodw jicd jcd jlcd jcdw wjiocdw qjcdiow ewjodw jicd jcd jlcd jcdw wjiocdw qjcdiow ewjodw jicd jcd jlcd jcdw wjiocdw qjcdiow ewjodw jicd jcd jlcd jcdw wjiocdw qjcdiow ewjodw jicd jcd jlcd jcdw wjiocdw qjcdiow ewjodw jicd jcd jlcd jcdw wjiocdw qjcdiow ewjodw jicd jcd jlcd jcdw wjiocdw qjcdiow ewjodw jicd jcd jlcd jcdw wjiocdw qjcdiow ewjodw jicd jcd jlcd jcdw wjiocdw qjcdiow ewjodw jicd jcd jlcd jcdw wjiocdw qjcdiow ewjodw jicd jcd jlcd jcdw wjiocdw qjcdiow ewjodw jicd jcd jlcd jcdw wjiocdw qjcdiow ewjodw jicd jcd jlcd jcdw wjiocdw q</p>
+      <p><strong>Terms & Conditions:</strong> Terms & Conditions: Your free sample will be shipped within 7-10 days, via Australia Post, limit one 50g sample per household.
+Without limiting any other terms herein, the entrant agrees to indemnify the Promoter for any breach of the above terms.
+1. Information on how to enter and the prizes form part of these Terms and Conditions. Participation in this promotion is deemed acceptance of these Terms and Conditions.
+2. The promoter is Ivory Coat Companion Goods of Level 13, 200 Queens Street, Melbourne, 1300 799 214  (“Promoter”).
+3. Entry is only open to Australian residents aged 18 years or over who are the owner of a pet dog (“Pet”).
+4. Promotion commences on XX/XX/2016 and final entries close at 11:59pm AEST on XX/XX/2016 (“Promotional Period”). 
+6. To enter, individuals must complete the following steps during the Promotional Period:
+a) Register their details on this site requesting a free dog food sample. 
+7. Incomplete or indecipherable entries will be deemed invalid.
+8. Multiple entries not permitted.
+9. The Promoter reserves the right, at any time, to verify the validity of entries and entrants (including an entrant’s identity, age and place of residence) and reserves the right, in its sole discretion, to disqualify any individual who the Promoter has reason to believe has breached any of these Terms and Conditions, tampered with the entry process or engaged in any unlawful or other improper misconduct calculated to jeopardise fair and proper conduct of the promotion. Errors and omissions may be accepted at the Promoter's discretion. Failure by the Promoter to enforce any of its rights at any stage does not constitute a waiver of those rights. The Promoter's legal rights to recover damages or other compensation from such an offender are reserved.
+10. If there is a dispute as to the identity of an entrant, the Promoter reserves the right, in its sole discretion, to determine the identity of the entrant.
+11. This is a game of skill and chance plays no part in determining the winners. Each entry will be individually judged based on the originality, literary merit and creative merit of the written explanation submitted, and the originality and creative merit of the accompanying photo submitted. The judges may select additional reserve entries which they determine to be the next best, and record them in order of merit, in case of an invalid entry or ineligible entrant.
+12. The winners will be notified by way of email. The winner will then be required to contact the Promoter in order to organise delivery of their prize.
+13. The Promoter’s decision is final and no correspondence will be entered into.
+14. The best valid entry, as determined by the judges, will win a prize pack for their Pet, valued at $504 (“Major Prize”). The Major Prize includes 3x 13kg Bags Grain Free Dry Food, 5x 300g Gourmet treats and 3x 500ml Grooming products. 
+15. If for any reason a winner does not take a prize by the time stipulated by the Promoter, then the prize will be forfeited.
+16. If any prize (or part of any prize) is unavailable, the Promoter, in its discretion, reserves the right to substitute the prize (or that part of the prize) with a prize to the equal value and/or specification.
+17. Total prize pool value is $504.
+18. Prizes, or any unused portion of a prize, are not transferable or exchangeable and cannot be taken as cash.Without limiting any other terms herein, the entrant agrees to indemnify the Promoter for any breach of the above terms.
+19. If this promotion is interfered with in any way or is not capable of being conducted as reasonably anticipated due to any reason beyond the reasonable control of the Promoter, including but not limited to technical difficulties, unauthorised intervention or fraud, the Promoter reserves the right, in its sole discretion, to the fullest extent permitted by law (a) to disqualify any entrant; or (b) to modify, suspend, terminate or cancel the promotion, as appropriate.
+20. Any cost associated with accessing the webpage for entry is the entrant’s responsibility and is dependent on the Internet service provider used. 
+21. Nothing in these Terms and Conditions limits, excludes or modifies or purports to limit, exclude or modify the statutory consumer guarantees as provided under the Competition and Consumer Act, as well as any other implied warranties under the ASIC Act or similar consumer protection laws in the States and Territories of Australia (“Non-Excludable Guarantees”). Except for any liability that cannot by law be excluded, including the Non-Excludable Guarantees, the Promoter (including its respective officers, employees and agents) excludes all liability (including negligence), for any personal injury; or any loss or damage (including loss of opportunity); whether direct, indirect, special or consequential, arising in any way out of the promotion.
+22. Except for any liability that cannot by law be excluded, including the Non-Excludable Guarantees, the Promoter (including its respective officers, employees and agents) is not responsible for and excludes all liability (including negligence), for any personal injury; or any loss or damage (including loss of opportunity); whether direct, indirect, special or consequential, arising in any way out of: (a) any technical difficulties or equipment malfunction (whether or not under the Promoter’s control); (b) any theft, unauthorised access or third party interference; (c) any entry or prize claim that is late, lost, altered, damaged or misdirected (whether or not after their receipt by the Promoter) due to any reason beyond the reasonable control of the Promoter; (d) any variation in prize value to that stated in these Terms and Conditions; (e) any tax liability incurred by a winner or entrant; or (f) taking/use of a prize.
+23. The Promoter collects personal information ("PI") in order to conduct the promotion and may, for this purpose, disclose such PI to third parties, including but not limited to agents, contractors, service providers, and prize suppliers. Entry is conditional on providing this PI. The Promoter will also use and handle PI as set out in its Privacy Policy, which can be viewed at www.zoetis.com.au. In addition to any use that may be outlined in the Promoter’s Privacy Policy, the Promoter may, for an indefinite period, unless otherwise advised, use the PI for promotional, marketing, publicity, research and profiling purposes, including sending electronic messages or telephoning individuals. The Privacy Policy also contains information about how individuals may opt out, access, update or correct their PI, how individuals may complain about a breach of the Australian Privacy Principles or any other applicable law and how those complaints will be dealt with. All entries become the property of the Promoter. The Promoter will not disclose individuals’ PI to any entity outside of Australia.</p>
     </div>
   </div>
 
@@ -113,7 +147,103 @@
       <div class="footer-legal">All prices are in AUD Copyright Ivory Coat Companion Goods | *Conditions apply</div>
     </div>
   </footer>
-
-</body>
+  <script type="text/javascript" src="/assets/js/jquery-2.2.3.min.js"></script>
+  <script>
   
+    var fields = {
+      'email': false,
+      'why': false,
+      'firstname': false,
+      'lastname' : false,
+      'address' : false,
+      'state' : false,
+      'postcode' : false,
+      'city' : false,
+      'adult' : false,
+      'puppy' : false
+    };
+      
+      
+    $(document).ready(function() {
+      
+      $('#adult').change(function(e) {
+          fields['adult'] = this.checked;
+      });
+      $('#puppy').change(function(e) {
+          fields['puppy'] = this.checked;
+      });
+      $('#email').change(function(e) {
+          fields['email'] = e.target.value;
+      });
+      $('#why').change(function(e) {
+          fields['why'] = e.target.value;
+      });
+      $('#address').change(function(e) {
+          fields['address'] = e.target.value;
+      });
+      $('#city').change(function(e) {
+          fields['city'] = e.target.value;
+      });
+      $('#state').change(function(e) {
+          fields['state'] = e.target.value;
+      });
+      $('#postcode').change(function(e) {
+          fields['postcode'] = e.target.value;
+      });
+      $('#firstname').change(function(e) {
+          fields['firstname'] = e.target.value;
+      });
+      $('#lastname').change(function(e) {
+          fields['lastname'] = e.target.value;
+      });
+    });
+
+    function checkField(id) {
+      if (!fields[id] || fields[id].length === 0) {
+        $('#' + id).addClass('not-ok');
+        return false;
+      } else {
+        $('#' + id).removeClass('not-ok');
+        return true;
+      }
+    }
+
+    function checkRadio(id1, id2) {
+      if (!fields[id1] && !fields[id2]) {
+        $('#' + id1).closest('.input').addClass('not-ok');
+        return false;
+      } else {
+        $('#' + id1).closest('.input').removeClass('not-ok');
+        return true;
+      }
+    }
+
+    $('#form-trigger').click(function(e) {
+      e.preventDefault();
+
+      var state1 = checkField('email'); 
+      var state2 = checkField('why');
+      var state3 = checkField('firstname'); 
+      var state4 = checkField('lastname');
+      var state5 = checkField('address');
+      var state6 = checkField('city');
+      var state7 = checkField('state');
+      var state8 = checkField('postcode');
+      var state9 = fields['puppy'];
+      var state10 = fields['adult'];
+      checkRadio('adult', 'puppy');
+
+      var total = (state1 && state2 && state3 && state4 && state5 && state6 && state7 && state8 && (state9 || state10));
+      if (total === true) {
+        $.ajax({
+          url: 'https://docs.google.com/forms/d/e/1FAIpQLSdYFTZha8SDIOeOpFbIcN3z79ZLbfXzUNeVI9J1gsHE1NHziA/formResponse',
+          type: 'post',
+          data: $('form').serialize()
+        });
+        $('form').css('display', 'none');
+        $('#thank-you-message').css('display', 'block');
+      }
+   });
+  </script>
+</body>
 </html>​
